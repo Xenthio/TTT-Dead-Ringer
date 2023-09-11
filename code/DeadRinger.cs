@@ -93,6 +93,10 @@ public partial class DeadRinger : Carriable
 		{
 			Input.Clear("Attack1");
 			Input.Clear("Attack2");
+
+
+			Input.SetAction("Attack1", false);
+			Input.SetAction("Attack2", false);
 		}
 	}
 	[Event.Client.Frame]
