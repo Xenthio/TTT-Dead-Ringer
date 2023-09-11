@@ -98,6 +98,7 @@ public partial class DeadRinger : Carriable
 	[Event.Client.Frame]
 	void Frame()
 	{
+		if (Owner.Client != Game.LocalClient) return;
 		if (Enabled) DebugOverlay.ScreenText("Dead Ringer is primed for activation.");
 	}
 
